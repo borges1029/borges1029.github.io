@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alexandro Borges — Desenvolvedor Back-End & Full Stack Sênior</title>
-    <meta name="description" content="Desenvolvedor Back-End e Full Stack Sênior com 10+ anos de experiência em PHP, JavaScript/TypeScript, Java, arquitetura de software, bancos de dados, microsserviços, CI/CD e automação.">
+    <title data-i18n="meta.title">Alexandro Borges — Desenvolvedor Back-End & Full Stack Sênior</title>
+    <meta name="description" data-i18n-attr="content:meta.description" content="Desenvolvedor Back-End e Full Stack Sênior com 10+ anos de experiência em PHP, JavaScript/TypeScript, Java, arquitetura de software, bancos de dados, microsserviços, CI/CD e automação.">
     <meta name="author" content="Alexandro Borges">
     <meta name="theme-color" content="#161616">
 
@@ -13,6 +13,8 @@
     <meta property="og:description" content="10+ anos construindo sistemas web corporativos de ponta a ponta: arquitetura, APIs, bancos de dados, front-end e infraestrutura.">
     <meta property="og:image" content="imgs/profile.jpg">
     <meta property="og:locale" content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
 
     <link rel="icon" href="imgs/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.ico" sizes="any">
@@ -23,23 +25,30 @@
     <link href="css/global.css" rel="stylesheet">
 </head>
 <body>
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="skip">Pular para o conteúdo</a>
 
     <header class="site-header">
         <div class="wrap header-inner">
-            <a href="#topo" class="brand" aria-label="Início">
+            <a href="#topo" class="brand" aria-label="Início" data-i18n-attr="aria-label:nav.home">
                 <span class="brand-mark">AB</span>
                 <span class="brand-name">Alexandro Borges</span>
             </a>
-            <nav aria-label="Navegação principal">
-                <ul class="nav">
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#stack">Stack</a></li>
-                    <li><a href="#contato" class="nav-cta">Contato</a></li>
-                </ul>
-            </nav>
+            <div class="header-right">
+                <nav aria-label="Navegação principal" data-i18n-attr="aria-label:nav.label">
+                    <ul class="nav">
+                        <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
+                        <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
+                        <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
+                        <li><a href="#stack">Stack</a></li>
+                        <li><a href="#contato" class="nav-cta" data-i18n="nav.contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:lang.label">
+                    <button type="button" data-lang="pt" lang="pt-BR" aria-pressed="true" title="Português">PT</button>
+                    <button type="button" data-lang="en" lang="en" aria-pressed="false" title="English">EN</button>
+                    <button type="button" data-lang="es" lang="es" aria-pressed="false" title="Español">ES</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -48,18 +57,18 @@
         <section class="hero" id="topo">
             <div class="wrap hero-grid">
                 <div class="hero-text">
-                    <p class="eyebrow">Back-End · Full Stack · Sênior</p>
-                    <h1>Construo sistemas web corporativos de ponta a ponta — da modelagem de dados à interface.</h1>
-                    <p class="lead">
+                    <p class="eyebrow" data-i18n="hero.eyebrow">Back-End · Full Stack · Sênior</p>
+                    <h1 data-i18n="hero.title">Construo sistemas web corporativos de ponta a ponta — da modelagem de dados à interface.</h1>
+                    <p class="lead" data-i18n="hero.lead">
                         Sou Alexandro Borges, desenvolvedor com <strong>10+ anos de experiência</strong>.
                         Trabalho com arquitetura de software, APIs, bancos de dados relacionais,
                         microsserviços e automação, com foco em performance, escalabilidade e código sustentável.
                     </p>
                     <div class="hero-actions">
-                        <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-                        <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+                        <a href="#projetos" class="btn btn-primary" data-i18n="hero.ctaProjects">Ver projetos</a>
+                        <a href="#contato" class="btn btn-ghost" data-i18n="hero.ctaContact">Entrar em contato</a>
                     </div>
-                    <ul class="hero-links" aria-label="Redes">
+                    <ul class="hero-links" aria-label="Redes" data-i18n-attr="aria-label:hero.social">
                         <li><a href="https://www.linkedin.com/in/alexandro-borges" target="_blank" rel="noopener"><img src="imgs/logo--linkedin.svg" alt="" width="20" height="20">LinkedIn</a></li>
                         <li><a href="https://github.com/borges1029" target="_blank" rel="noopener"><img src="imgs/logo--github.svg" alt="" width="20" height="20">GitHub</a></li>
                         <li><a href="mailto:alexandro.boorges@gmail.com"><img src="imgs/email.svg" alt="" width="20" height="20">E-mail</a></li>
@@ -67,16 +76,16 @@
                     </ul>
                 </div>
                 <div class="hero-photo">
-                    <img src="imgs/profile-colorful.jpg" alt="Foto de Alexandro Borges" width="360" height="360">
+                    <img src="imgs/profile-colorful.jpg" alt="Foto de Alexandro Borges" data-i18n-attr="alt:hero.photoAlt" width="360" height="360">
                 </div>
             </div>
 
             <div class="wrap">
                 <dl class="stats">
-                    <div><dt>10+</dt><dd>anos desenvolvendo software</dd></div>
-                    <div><dt>Full Stack</dt><dd>back-end, front-end, mobile e infra</dd></div>
-                    <div><dt>PHP · JS · Java</dt><dd>ecossistemas principais</dd></div>
-                    <div><dt>DF · Brasil</dt><dd>Planaltina, Distrito Federal</dd></div>
+                    <div><dt>10+</dt><dd data-i18n="stats.years">anos desenvolvendo software</dd></div>
+                    <div><dt>Full Stack</dt><dd data-i18n="stats.fullstack">back-end, front-end, mobile e infra</dd></div>
+                    <div><dt>PHP · JS · Java</dt><dd data-i18n="stats.ecosystems">ecossistemas principais</dd></div>
+                    <div><dt data-i18n="stats.locationTitle">DF · Brasil</dt><dd data-i18n="stats.location">Planaltina, Distrito Federal</dd></div>
                 </dl>
             </div>
         </section>
@@ -85,25 +94,25 @@
         <section class="section" id="sobre">
             <div class="wrap two-col">
                 <div>
-                    <p class="section-kicker">01 — Sobre</p>
-                    <h2>Engenharia com visão de produto</h2>
+                    <p class="section-kicker" data-i18n="about.kicker">01 — Sobre</p>
+                    <h2 data-i18n="about.title">Engenharia com visão de produto</h2>
                 </div>
                 <div class="prose">
-                    <p>
+                    <p data-i18n="about.p1">
                         Comecei em 2016 desenvolvendo websites para empresas e, desde então, venho construindo
                         plataformas corporativas completas: ERPs, sistemas financeiros, GED, assinatura digital e
                         ferramentas internas para grandes clientes como a Caixa Econômica Federal.
                     </p>
-                    <p>
+                    <p data-i18n="about.p2">
                         Conduzi a reengenharia de sistemas legados, criei frameworks internos de back-end e front-end
                         e fui responsável por plataformas inteiras, da arquitetura à entrega. No dia a dia, atuo em
                         todas as camadas: modelagem e otimização de bancos, APIs e integrações, interfaces com
                         design system, pipelines de CI/CD, servidores Linux e automações com Airflow, N8N e IA.
                     </p>
                     <ul class="principles">
-                        <li><strong>Arquitetura</strong> pensada para escalar e ser mantida por times.</li>
-                        <li><strong>Dados</strong> modelados com integridade, índices e performance desde o início.</li>
-                        <li><strong>Automação</strong> para reduzir trabalho manual e erro humano.</li>
+                        <li data-i18n="about.principle1"><strong>Arquitetura</strong> pensada para escalar e ser mantida por times.</li>
+                        <li data-i18n="about.principle2"><strong>Dados</strong> modelados com integridade, índices e performance desde o início.</li>
+                        <li data-i18n="about.principle3"><strong>Automação</strong> para reduzir trabalho manual e erro humano.</li>
                     </ul>
                 </div>
             </div>
@@ -112,26 +121,26 @@
         <!-- Experiência -->
         <section class="section section-alt" id="experiencia">
             <div class="wrap">
-                <p class="section-kicker">02 — Experiência</p>
-                <h2>Trajetória profissional</h2>
+                <p class="section-kicker" data-i18n="exp.kicker">02 — Experiência</p>
+                <h2 data-i18n="exp.title">Trajetória profissional</h2>
 
                 <ol class="timeline">
                     <li class="job">
                         <div class="job-meta">
-                            <span class="job-period">Ago 2023 — Atual</span>
+                            <span class="job-period" data-i18n="exp.ev.period">Ago 2023 — Atual</span>
                         </div>
                         <div class="job-body">
-                            <h3>Desenvolvedor Full Stack Sênior <span>· Estado Virtual</span></h3>
+                            <h3 data-i18n="exp.ev.role">Desenvolvedor Full Stack Sênior <span>· Estado Virtual</span></h3>
                             <ul>
-                                <li>Desenvolvimento full stack de plataformas web corporativas com PHP, JavaScript e MariaDB.</li>
-                                <li>Arquitetura e evolução do framework PHP próprio que sustenta o back-end de todas as plataformas da empresa.</li>
-                                <li>Reengenharia completa do ERP jurídico <a href="https://www.bigadv.com.br/" target="_blank" rel="noopener">BigAdv</a> com Carbon Design System (IBM) e um framework front-end próprio em JavaScript.</li>
-                                <li>Desenvolvimento completo da plataforma de assinatura digital <a href="https://www.evalid.com.br/" target="_blank" rel="noopener">EValid</a>, incluindo reconhecimento facial e API de integração com terceiros.</li>
-                                <li>Módulo de workflow visual do GED <a href="https://www.evsolid.com/evdoc/" target="_blank" rel="noopener">EVDoc</a>.</li>
-                                <li>Modelagem de bases de dados, refatoração de consultas legadas, indexação estratégica e chaves estrangeiras.</li>
-                                <li>Infraestrutura e automação: servidores Linux, Docker, microsserviços, CI/CD, AWS S3, Airflow, N8N, OpenAI e web scraping com Python.</li>
+                                <li data-i18n="exp.ev.b1">Desenvolvimento full stack de plataformas web corporativas com PHP, JavaScript e MariaDB.</li>
+                                <li data-i18n="exp.ev.b2">Arquitetura e evolução do framework PHP próprio que sustenta o back-end de todas as plataformas da empresa.</li>
+                                <li data-i18n="exp.ev.b3">Reengenharia completa do ERP jurídico <a href="https://www.bigadv.com.br/" target="_blank" rel="noopener">BigAdv</a> com Carbon Design System (IBM) e um framework front-end próprio em JavaScript.</li>
+                                <li data-i18n="exp.ev.b4">Desenvolvimento completo da plataforma de assinatura digital <a href="https://www.evalid.com.br/" target="_blank" rel="noopener">EValid</a>, incluindo reconhecimento facial e API de integração com terceiros.</li>
+                                <li data-i18n="exp.ev.b5">Módulo de workflow visual do GED <a href="https://www.evsolid.com/evdoc/" target="_blank" rel="noopener">EVDoc</a>.</li>
+                                <li data-i18n="exp.ev.b6">Modelagem de bases de dados, refatoração de consultas legadas, indexação estratégica e chaves estrangeiras.</li>
+                                <li data-i18n="exp.ev.b7">Infraestrutura e automação: servidores Linux, Docker, microsserviços, CI/CD, AWS S3, Airflow, N8N, OpenAI e web scraping com Python.</li>
                             </ul>
-                            <ul class="tags" aria-label="Tecnologias">
+                            <ul class="tags" aria-label="Tecnologias" data-i18n-attr="aria-label:tags.label">
                                 <li>PHP</li><li>JavaScript</li><li>MariaDB</li><li>Python</li><li>Docker</li><li>Airflow</li><li>AWS S3</li><li>OpenAI</li>
                             </ul>
                         </div>
@@ -139,17 +148,17 @@
 
                     <li class="job">
                         <div class="job-meta">
-                            <span class="job-period">Jan 2023 — Set 2024</span>
+                            <span class="job-period" data-i18n="exp.bia.period">Jan 2023 — Set 2024</span>
                         </div>
                         <div class="job-body">
-                            <h3>Desenvolvedor Back-End <span>· Bia Technology</span></h3>
+                            <h3 data-i18n="exp.bia.role">Desenvolvedor Back-End <span>· Bia Technology</span></h3>
                             <ul>
-                                <li>Desenvolvimento de plataformas web em PHP (Laravel).</li>
-                                <li>Desenvolvimento de aplicativo multiplataforma com Flutter (Android e iOS).</li>
-                                <li>Manutenção e evolução de plataforma em Java.</li>
-                                <li>Gerenciamento de projetos de desenvolvimento.</li>
+                                <li data-i18n="exp.bia.b1">Desenvolvimento de plataformas web em PHP (Laravel).</li>
+                                <li data-i18n="exp.bia.b2">Desenvolvimento de aplicativo multiplataforma com Flutter (Android e iOS).</li>
+                                <li data-i18n="exp.bia.b3">Manutenção e evolução de plataforma em Java.</li>
+                                <li data-i18n="exp.bia.b4">Gerenciamento de projetos de desenvolvimento.</li>
                             </ul>
-                            <ul class="tags" aria-label="Tecnologias">
+                            <ul class="tags" aria-label="Tecnologias" data-i18n-attr="aria-label:tags.label">
                                 <li>Laravel</li><li>Flutter</li><li>Dart</li><li>Java</li>
                             </ul>
                         </div>
@@ -157,16 +166,16 @@
 
                     <li class="job">
                         <div class="job-meta">
-                            <span class="job-period">Jan 2023 — Ago 2023</span>
+                            <span class="job-period" data-i18n="exp.tele.period">Jan 2023 — Ago 2023</span>
                         </div>
                         <div class="job-body">
-                            <h3>Gerente de TI <span>· Teledata | Caixa Econômica Federal</span></h3>
+                            <h3 data-i18n="exp.tele.role">Gerente de TI <span>· Teledata | Caixa Econômica Federal</span></h3>
                             <ul>
-                                <li>Desenvolvimento de sistema interno em Java para a Caixa Econômica Federal.</li>
-                                <li>Desenvolvimento de plataforma de help-desk.</li>
-                                <li>Gestão de projetos e equipe.</li>
+                                <li data-i18n="exp.tele.b1">Desenvolvimento de sistema interno em Java para a Caixa Econômica Federal.</li>
+                                <li data-i18n="exp.tele.b2">Desenvolvimento de plataforma de help-desk.</li>
+                                <li data-i18n="exp.tele.b3">Gestão de projetos e equipe.</li>
                             </ul>
-                            <ul class="tags" aria-label="Tecnologias">
+                            <ul class="tags" aria-label="Tecnologias" data-i18n-attr="aria-label:tags.label">
                                 <li>Java</li><li>EJB</li><li>JPA</li><li>JSF</li>
                             </ul>
                         </div>
@@ -174,15 +183,15 @@
 
                     <li class="job">
                         <div class="job-meta">
-                            <span class="job-period">Jun 2019 — Dez 2022</span>
+                            <span class="job-period" data-i18n="exp.conex.period">Jun 2019 — Dez 2022</span>
                         </div>
                         <div class="job-body">
-                            <h3>Analista de Redes <span>· Conex Internet</span></h3>
+                            <h3 data-i18n="exp.conex.role">Analista de Redes <span>· Conex Internet</span></h3>
                             <ul>
-                                <li>Configuração de roteadores Mikrotik e servidores Linux.</li>
-                                <li>Monitoramento de rede com Zabbix e Grafana.</li>
-                                <li>Análise de dados e relatórios com Power BI.</li>
-                                <li>Desenvolvimento de sistema próprio de agendamento e atendimento.</li>
+                                <li data-i18n="exp.conex.b1">Configuração de roteadores Mikrotik e servidores Linux.</li>
+                                <li data-i18n="exp.conex.b2">Monitoramento de rede com Zabbix e Grafana.</li>
+                                <li data-i18n="exp.conex.b3">Análise de dados e relatórios com Power BI.</li>
+                                <li data-i18n="exp.conex.b4">Desenvolvimento de sistema próprio de agendamento e atendimento.</li>
                             </ul>
                         </div>
                     </li>
@@ -192,9 +201,9 @@
                             <span class="job-period">2016 — 2019</span>
                         </div>
                         <div class="job-body">
-                            <h3>Desenvolvedor Web <span>· Projetos para empresas</span></h3>
+                            <h3 data-i18n="exp.web.role">Desenvolvedor Web <span>· Projetos para empresas</span></h3>
                             <ul>
-                                <li>Desenvolvimento de websites e sistemas para empresas privadas.</li>
+                                <li data-i18n="exp.web.b1">Desenvolvimento de websites e sistemas para empresas privadas.</li>
                             </ul>
                         </div>
                     </li>
@@ -205,27 +214,27 @@
         <!-- Projetos -->
         <section class="section" id="projetos">
             <div class="wrap">
-                <p class="section-kicker">03 — Projetos</p>
-                <h2>Produtos em produção</h2>
-                <p class="section-intro">Plataformas corporativas que ajudei a construir e que estão no ar. O código é proprietário, mas os produtos podem ser acessados nos links abaixo.</p>
+                <p class="section-kicker" data-i18n="proj.kicker">03 — Projetos</p>
+                <h2 data-i18n="proj.title">Produtos em produção</h2>
+                <p class="section-intro" data-i18n="proj.intro">Plataformas corporativas que ajudei a construir e que estão no ar. O código é proprietário, mas os produtos podem ser acessados nos links abaixo.</p>
 
                 <div class="cards">
                     <article class="card">
-                        <p class="card-label">EValid · Plataforma completa</p>
-                        <h3>Assinatura digital com reconhecimento facial</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.evalid.label">EValid · Plataforma completa</p>
+                        <h3 data-i18n="proj.evalid.title">Assinatura digital com reconhecimento facial</h3>
+                        <p data-i18n="proj.evalid.text">
                             Responsável pela plataforma do zero: arquitetura, modelagem do banco, back-end e front-end.
                             Desenvolvi o fluxo de validação por leitura e reconhecimento facial e a API pública de
                             integração para plataformas de terceiros.
                         </p>
-                        <ul class="tags"><li>PHP</li><li>JavaScript</li><li>MariaDB</li><li>API REST</li><li>Biometria facial</li></ul>
+                        <ul class="tags"><li>PHP</li><li>JavaScript</li><li>MariaDB</li><li>API REST</li><li data-i18n="tag.faceBio">Biometria facial</li></ul>
                         <a class="card-link" href="https://www.evalid.com.br/" target="_blank" rel="noopener">evalid.com.br <span aria-hidden="true">↗</span></a>
                     </article>
 
                     <article class="card">
-                        <p class="card-label">BigAdv · Reengenharia</p>
-                        <h3>ERP jurídico — nova geração</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.bigadv.label">BigAdv · Reengenharia</p>
+                        <h3 data-i18n="proj.bigadv.title">ERP jurídico — nova geração</h3>
+                        <p data-i18n="proj.bigadv.text">
                             Reengenharia completa de um ERP legado para uma nova versão com Carbon Design System (IBM).
                             Criei um framework front-end próprio em JavaScript que padroniza e gera todos os
                             componentes da aplicação.
@@ -235,32 +244,32 @@
                     </article>
 
                     <article class="card">
-                        <p class="card-label">EVDoc · UX e workflow</p>
-                        <h3>GED com workflow visual</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.evdoc.label">EVDoc · UX e workflow</p>
+                        <h3 data-i18n="proj.evdoc.title">GED com workflow visual</h3>
+                        <p data-i18n="proj.evdoc.text">
                             Módulo de workflow visual com biblioteca de desenho (draw), permitindo criar fluxos de
                             documentos de forma intuitiva e reduzindo a curva de aprendizado dos usuários. Serviu de
                             base para o módulo de assinatura digital.
                         </p>
-                        <ul class="tags"><li>JavaScript</li><li>PHP</li><li>GED</li><li>BPM</li></ul>
+                        <ul class="tags"><li>JavaScript</li><li>PHP</li><li data-i18n="tag.ged">GED</li><li>BPM</li></ul>
                         <a class="card-link" href="https://www.evsolid.com/evdoc/" target="_blank" rel="noopener">evsolid.com/evdoc <span aria-hidden="true">↗</span></a>
                     </article>
 
                     <article class="card">
-                        <p class="card-label">BigAdv · Automação e regras</p>
-                        <h3>"Firewall" de publicações processuais</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.firewall.label">BigAdv · Automação e regras</p>
+                        <h3 data-i18n="proj.firewall.title">"Firewall" de publicações processuais</h3>
+                        <p data-i18n="proj.firewall.text">
                             Módulo inspirado em firewall de rede: o gestor do escritório define regras sobre publicações
                             e andamentos que chegam ao sistema e quais ações são executadas automaticamente.
                             Reduziu significativamente a leitura manual e a organização interna.
                         </p>
-                        <ul class="tags"><li>PHP</li><li>Motor de regras</li><li>MariaDB</li></ul>
+                        <ul class="tags"><li>PHP</li><li data-i18n="tag.rules">Motor de regras</li><li>MariaDB</li></ul>
                     </article>
 
                     <article class="card">
-                        <p class="card-label">BigAdv · Dados e scraping</p>
-                        <h3>Captura automática de publicações</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.scraping.label">BigAdv · Dados e scraping</p>
+                        <h3 data-i18n="proj.scraping.title">Captura automática de publicações</h3>
+                        <p data-i18n="proj.scraping.text">
                             Bot em Python com web scraping que captura automaticamente publicações e andamentos
                             processuais nas plataformas jurídicas, com base de dados modelada para o buscador de publicações.
                         </p>
@@ -269,42 +278,42 @@
 
                     <article class="card">
                         <p class="card-label">Framework · Back-end</p>
-                        <h3>Framework PHP corporativo</h3>
-                        <p>
+                        <h3 data-i18n="proj.framework.title">Framework PHP corporativo</h3>
+                        <p data-i18n="proj.framework.text">
                             Participação na arquitetura e evolução do framework PHP próprio que sustenta o back-end de
                             todas as plataformas estruturadas e mantidas pela empresa.
                         </p>
-                        <ul class="tags"><li>PHP</li><li>Arquitetura</li><li>Padrões de projeto</li></ul>
+                        <ul class="tags"><li>PHP</li><li data-i18n="tag.architecture">Arquitetura</li><li data-i18n="tag.patterns">Padrões de projeto</li></ul>
                     </article>
                 </div>
 
-                <h3 class="subsection-title">Produto autoral</h3>
+                <h3 class="subsection-title" data-i18n="proj.ownTitle">Produto autoral</h3>
                 <article class="feature">
                     <div class="feature-text">
-                        <p class="card-label">Autoria e manutenção · App + API + painel</p>
-                        <h3>BichoAí — ajude animais perto de você</h3>
-                        <p>
+                        <p class="card-label" data-i18n="proj.bicho.label">Autoria e manutenção · App + API + painel</p>
+                        <h3 data-i18n="proj.bicho.title">BichoAí — ajude animais perto de você</h3>
+                        <p data-i18n="proj.bicho.text">
                             Plataforma colaborativa para mapear animais em situação de rua e conectar pessoas que querem
                             ajudar. O usuário fotografa o animal, marca a localização no mapa e acompanha as atualizações
                             da comunidade. Concebi, desenvolvi e mantenho o produto de ponta a ponta: aplicativo, API,
                             painel administrativo e site.
                         </p>
                         <ul class="feature-stack">
-                            <li><strong>App</strong> Flutter · mapa com OpenStreetMap · geolocalização · Provider · Dio</li>
+                            <li data-i18n="proj.bicho.app"><strong>App</strong> Flutter · mapa com OpenStreetMap · geolocalização · Provider · Dio</li>
                             <li><strong>API</strong> Laravel 12 · Sanctum · MySQL</li>
                             <li><strong>Admin</strong> React · Vite</li>
                         </ul>
                         <div class="hero-actions">
-                            <a href="https://bichoai.com.br/" target="_blank" rel="noopener" class="btn btn-primary">Conhecer o BichoAí</a>
-                            <a href="https://apps.apple.com/br/developer/alexandro-dos-santos-borges/id1881618532" target="_blank" rel="noopener" class="btn btn-ghost">Meus apps na App Store</a>
+                            <a href="https://bichoai.com.br/" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="proj.bicho.cta">Conhecer o BichoAí</a>
+                            <a href="https://apps.apple.com/br/developer/alexandro-dos-santos-borges/id1881618532" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="proj.bicho.ctaStore">Meus apps na App Store</a>
                         </div>
                     </div>
                     <div class="feature-apps">
-                        <p class="card-label">Publicados na App Store</p>
+                        <p class="card-label" data-i18n="proj.apps.label">Publicados na App Store</p>
                         <ul>
-                            <li><strong>BichoAí</strong><span>Proteção animal colaborativa</span></li>
-                            <li><strong>MK Pay Gestão</strong><span>Utilidades</span></li>
-                            <li><strong>Nordeste tem bons técnicos</strong><span>Utilidades</span></li>
+                            <li><strong>BichoAí</strong><span data-i18n="proj.apps.bicho">Proteção animal colaborativa</span></li>
+                            <li><strong>MK Pay Gestão</strong><span data-i18n="proj.apps.utilities">Utilidades</span></li>
+                            <li><strong>Nordeste tem bons técnicos</strong><span data-i18n="proj.apps.utilities">Utilidades</span></li>
                         </ul>
                     </div>
                 </article>
@@ -315,14 +324,14 @@
         <section class="section section-alt" id="stack">
             <div class="wrap">
                 <p class="section-kicker">04 — Stack</p>
-                <h2>Tecnologias que uso no dia a dia</h2>
+                <h2 data-i18n="stack.title">Tecnologias que uso no dia a dia</h2>
 
                 <div class="stack-grid">
                     <div class="stack-group">
                         <h3>Back-End</h3>
                         <ul class="tags">
                             <li>PHP</li><li>Laravel</li><li>CakePHP</li><li>CodeIgniter</li><li>Laminas</li><li>Swoole</li>
-                            <li>Java (EJB, JMS, JSF, JPA, JDBC)</li><li>Node.js</li><li>Python</li><li>APIs REST</li><li>Webhooks</li><li>Microsserviços</li>
+                            <li>Java (EJB, JMS, JSF, JPA, JDBC)</li><li>Node.js</li><li>Python</li><li>APIs REST</li><li>Webhooks</li><li data-i18n="tag.microservices">Microsserviços</li>
                         </ul>
                     </div>
                     <div class="stack-group">
@@ -333,10 +342,10 @@
                         </ul>
                     </div>
                     <div class="stack-group">
-                        <h3>Banco de dados</h3>
+                        <h3 data-i18n="stack.db">Banco de dados</h3>
                         <ul class="tags">
                             <li>MariaDB</li><li>MySQL</li><li>PostgreSQL</li><li>Redis</li><li>NoSQL</li>
-                            <li>Modelagem</li><li>Otimização de queries</li><li>Indexação</li>
+                            <li data-i18n="tag.modeling">Modelagem</li><li data-i18n="tag.queryOpt">Otimização de queries</li><li data-i18n="tag.indexing">Indexação</li>
                         </ul>
                     </div>
                     <div class="stack-group">
@@ -347,16 +356,16 @@
                         </ul>
                     </div>
                     <div class="stack-group">
-                        <h3>Dados, IA &amp; Automação</h3>
+                        <h3 data-i18n="stack.data">Dados, IA &amp; Automação</h3>
                         <ul class="tags">
                             <li>Apache Airflow</li><li>N8N</li><li>OpenAI API</li><li>Web scraping</li><li>Power BI</li>
                         </ul>
                     </div>
                     <div class="stack-group">
-                        <h3>Mobile &amp; Integrações</h3>
+                        <h3 data-i18n="stack.mobile">Mobile &amp; Integrações</h3>
                         <ul class="tags">
                             <li>Flutter</li><li>Dart</li><li>Android / iOS</li><li>App Store / Google Play</li>
-                            <li>Integrações de pagamento</li><li>WhatsApp API</li>
+                            <li data-i18n="tag.payments">Integrações de pagamento</li><li>WhatsApp API</li>
                         </ul>
                     </div>
                 </div>
@@ -366,12 +375,12 @@
         <!-- Contato -->
         <section class="section contact" id="contato">
             <div class="wrap contact-inner">
-                <p class="section-kicker">05 — Contato</p>
-                <h2>Vamos conversar?</h2>
-                <p class="lead">Aberto a oportunidades como Desenvolvedor Back-End ou Full Stack Sênior.</p>
+                <p class="section-kicker" data-i18n="contact.kicker">05 — Contato</p>
+                <h2 data-i18n="contact.title">Vamos conversar?</h2>
+                <p class="lead" data-i18n="contact.lead">Aberto a oportunidades como Desenvolvedor Back-End ou Full Stack Sênior.</p>
                 <div class="hero-actions center">
                     <a href="mailto:alexandro.boorges@gmail.com" class="btn btn-primary">alexandro.boorges@gmail.com</a>
-                    <a href="https://wa.me/5561992933961?text=Ol%C3%A1%2C%20Alexandro!%20Vi%20seu%20portf%C3%B3lio." target="_blank" rel="noopener" class="btn btn-whatsapp">
+                    <a href="https://wa.me/5561992933961?text=Ol%C3%A1%2C%20Alexandro!%20Vi%20seu%20portf%C3%B3lio." data-i18n-attr="href:contact.waHref" target="_blank" rel="noopener" class="btn btn-whatsapp">
                         <img src="imgs/logo--whatsapp.svg" alt="" width="20" height="20">WhatsApp
                     </a>
                     <a href="https://www.linkedin.com/in/alexandro-borges" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
@@ -383,12 +392,13 @@
 
     <footer class="site-footer">
         <div class="wrap">
-            <p>© <span id="ano">2026</span> Alexandro Borges · Análise e Desenvolvimento de Sistemas — UNIBF</p>
+            <p>© <span id="ano">2026</span> Alexandro Borges · <span data-i18n="footer.degree">Análise e Desenvolvimento de Sistemas — UNIBF</span></p>
         </div>
     </footer>
 
     <script>
         document.getElementById('ano').textContent = new Date().getFullYear();
     </script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>
